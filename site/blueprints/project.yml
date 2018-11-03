@@ -1,21 +1,32 @@
-title: Project
+title:         Project
 
 files:
-  sortable: true
+  sortable:    true
 
-pages: false
+pages:         false
+
+icon:          folder-open-o
 
 fields:
   title:
-    label: Title
-    type:  text
-    width: 3/4
+    label:     Title
+    type:      text
+    width:     2/5
+
+  subtitle:
+    label:     Subtitle
+    type:      text
+    width:     2/5
 
   year:
-    label: Year
-    type:  text
-    width: 1/4
+    label:     Year
+    type:      text
+    width:     1/5
 
   text:
-    label: Text
-    type:  textarea
+    label:     Text
+    type:      markdown
+
+  coverimage:
+    label:     coverimage
+    type:      image

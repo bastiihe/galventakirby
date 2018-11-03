@@ -1,24 +1,32 @@
-title: About
+title:           About
 
 pages:
-  template: team
-  num: zero
+  template:      about
+  build:
+    - title:     modules
+      uid:       modules
+      template:  modules
 
-files: false
+pages:           false
 
-options: 
-  template: false  
-  status: false  
-  
+files:           false
+
+icon:            users
+
 fields:
   title:
-    label: Title
-    type: title
-    
-  intro:
-    label: Intro
-    type: textarea
-    
-  text:
-    label: Text
-    type: textarea
+    label:       Title
+    type:        text
+    width:       1/2
+
+  menu_title:
+    label:       Menu Title
+    type:        text
+    placeholder: changes the Menu Title
+    help:        Optional
+    icon:        bars
+    width:       1/2
+
+  modules:
+    label:       Modules
+    type:        modules

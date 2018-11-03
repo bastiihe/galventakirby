@@ -1,0 +1,42 @@
+Title: Features
+
+----
+
+Features: 
+
+- 
+  img: feature-1.png
+  title: Skilled Professionals
+  subtitle: Lorem ipsum dolor sit amet
+  text: >
+    Lorem ipsum dolor sit amet, consectetur
+    adipisicing elit. Eligendi rem, facilis
+    nobis voluptatum est voluptatem
+    accusamus molestiae eaque perspiciatis
+    mollitia.
+  top: img
+  faicon: ""
+- 
+  img: feature-2.png
+  title: Effective Planning
+  subtitle: Lorem ipsum dolor sit amet
+  text: >
+    Lorem ipsum dolor sit amet, consectetur
+    adipisicing elit. Eligendi rem, facilis
+    nobis voluptatum est voluptatem
+    accusamus molestiae eaque perspiciatis
+    mollitia.
+  top: img
+  faicon: ""
+- 
+  img: feature-3.png
+  title: Risk Management
+  subtitle: Lorem ipsum dolor sit amet
+  text: >
+    Lorem ipsum dolor sit amet, consectetur
+    adipisicing elit. Eligendi rem, facilis
+    nobis voluptatum est voluptatem
+    accusamus molestiae eaque perspiciatis
+    mollitia.
+  top: img
+  faicon: ""

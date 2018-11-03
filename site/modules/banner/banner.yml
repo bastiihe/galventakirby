@@ -1,0 +1,20 @@
+title:      Banner Module
+pages:      false
+files:      false
+icon:       window-maximize
+
+fields:
+  title:
+    label:  Module title
+    type:   text
+    width:  1/2
+
+  color:
+    label:  Background Color
+    type:   color
+    width:  1/2
+    help:   'if empty primary theme color will be used as the background color'
+
+  text:
+    label:  Text
+    type:   markdown

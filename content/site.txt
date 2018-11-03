@@ -1,13 +1,96 @@
-Title: Kirby Starterkit
+Title: WAY
 
 ----
 
-Author: Bastian Allgeier GmbH
+Author: Admin
 
 ----
 
-Description: This is Kirby's Starterkit.
+Description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 
 ----
 
-Copyright: © 2009–(date: Year) (link: http://getkirby.com text: The Kirby Team)
+Copyright: © (date: Year) (link: http://themes.kueker.net/way text: Way)
+
+----
+
+Headline: 
+
+- 
+  name: Call us
+  icon: phone
+  category: phone
+  phone: (49)1234 56789012
+  email: ""
+  fax: ""
+  openinghours: ""
+  address: ""
+  event: ""
+- 
+  name: Email us
+  icon: envelope-o
+  category: email
+  phone: ""
+  email: way@template.com
+  fax: ""
+  openinghours: ""
+  address: ""
+  event: ""
+- 
+  name: "We're open"
+  icon: clock-o
+  category: openinghours
+  phone: ""
+  email: ""
+  fax: ""
+  openinghours: 'Mon - Sat, 10AM to 6PM'
+  address: ""
+  event: ""
+
+----
+
+Logo: logo.png
+
+----
+
+Email: way@template.com
+
+----
+
+Phone: (49)1234 56789012
+
+----
+
+Socialbar: 
+
+- 
+  company: facebook
+  url: http://facebook.com
+- 
+  company: twitter
+  url: http://twitter.com
+- 
+  company: instagram
+  url: http://instagram.com
+- 
+  company: pinterest
+  url: http://pinterest.com
+- 
+  company: google
+  url: http://google.com
+
+----
+
+Footer: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+
+----
+
+Color: #f00e0e
+
+----
+
+Color-primary: #3273dc
+
+----
+
+Favicon: 

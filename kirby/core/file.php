@@ -384,8 +384,4 @@ abstract class FileAbstract extends Media {
     ]);
   }
 
-  public function __clone() {
-    if(isset($this->cache['meta'])) $this->cache['meta'] = clone $this->cache['meta'];
-  }
-
 }

@@ -1,0 +1,25 @@
+Title: Blog
+
+----
+
+Menu-title: News
+
+----
+
+Perpage: 5
+
+----
+
+Text: 
+
+----
+
+Sidebar-category: Category
+
+----
+
+Sidebar-tags: Tagcloud
+
+----
+
+Sidebar-projects: Projects

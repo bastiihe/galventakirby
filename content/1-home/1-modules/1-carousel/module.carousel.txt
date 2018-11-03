@@ -1,0 +1,22 @@
+Title: Carousel
+
+----
+
+Carousel: 
+
+- 
+  img: slide-1.jpg
+  title: ""
+  text: |
+    ## Welcome to Way
+    
+    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+    
+    (button: Read More link: /blog/content-in-kirby)
+- 
+  img: slide-2.jpg
+  title: ""
+  text: |
+    ## Welcome to Way
+    
+    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam

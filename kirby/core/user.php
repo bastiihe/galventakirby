@@ -73,16 +73,15 @@ abstract class UserAbstract {
     $data  = $this->data();
 
     if(empty($data['role'])) {
-      // apply the fallback "nobody" role if no role is stored for the user
-      $data['role'] = 'nobody';
+      // apply the default role, if no role is stored for the user
+      $data['role'] = $roles->findDefault()->id();
     }
 
     // return the role by id
     if($role = $roles->get($data['role'])) {
       return $role;
     } else {
-      // return the fallback "nobody" role without permissions
-      return $roles->get('nobody');
+      return $roles->findDefault();
     }
 
   }
@@ -460,10 +459,6 @@ abstract class UserAbstract {
    */
   public function __debuginfo() {
     return $this->toArray();
-  }
-
-  public function __clone() {
-    if(isset($this->cache['avatar'])) $this->cache['avatar'] = clone $this->cache['avatar'];
   }
 
 }

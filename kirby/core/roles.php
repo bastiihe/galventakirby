@@ -68,19 +68,17 @@ abstract class RolesAbstract extends Collection {
       ]);
     }
 
-    // add a fallback "nobody" role (used for users with an invalid role)
-    // make sure that this role without permissions is *always* set,
-    // even if there is already a role called "nobody"
-    $this->data['nobody'] = new Role([
-      'id'          => 'nobody',
-      'name'        => 'Nobody',
-      'permissions' => false
-    ]);
-
-    // make that "nobody" role the default if no default is defined
+    // check for a valid default role to make sure one has been set
+    // and provide a fallback one with no permissions otherwise
     if(!$this->findDefault()) {
-      $this->data['nobody']->default = true;
+      $this->data['nobody'] = new Role([
+        'id'          => 'nobody',
+        'name'        => 'Nobody',
+        'default'     => true,
+        'permissions' => false
+      ]);
     }
+
   }
 
   /**

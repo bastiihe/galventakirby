@@ -1,0 +1,9 @@
+title:         Recent Projects Module
+pages:         false
+files:         false
+icon:          list-alt
+
+fields:
+  title:
+    label:     Module Title
+    type:      text

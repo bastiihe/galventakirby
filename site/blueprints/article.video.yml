@@ -1,0 +1,47 @@
+title:           Article with Video
+
+pages:           false
+files:           false
+
+icon:            film
+
+fields:
+  title:
+    label:       Title
+    type:        title
+    width:       1/3
+
+  author:
+    label:       Author
+    type:        user
+    width:       1/3
+
+  date:
+    icon:        calendar
+    label:       Date
+    type:        date
+    format:      LL
+    placeholder: Select a date…
+    default:     today
+    required:    true
+    width:       1/3
+
+  videolink:
+    label:       Featured video
+    type:        text
+
+  categories:
+    label:       Category
+    type:        select
+    readonly:    true
+    default:     Video
+    options:
+      Video:     Video
+
+  tags:
+    label:       Tags
+    type:        tags
+
+  text:
+    label:       Text
+    type:        markdown

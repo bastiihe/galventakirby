@@ -154,14 +154,14 @@ abstract class ChildrenAbstract extends Pages {
 
         $next = $obj->findBy('slug', $p);
 
-        if(!$next) return false;
+        if(!$next) break;
 
         $page = $next;
         $obj  = $next->children();
 
       }
 
-      return $page;
+      return ($page and $page->slug() != a::last($array)) ? false : $page;
 
     }
 

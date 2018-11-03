@@ -1,0 +1,30 @@
+Title: Testimonials
+
+----
+
+Testimonials: 
+
+- 
+  img: profile-1.png
+  name: Dennis
+  description: Webdeveloper
+  quote: 'We believe in Simple, Creative & Flexible Design Standards with a Retina & Responsive Approach. Browse the amazing Features this template offers.'
+- 
+  img: profile-2.png
+  name: Markus
+  description: CEO
+  quote: 'We believe in Simple, Creative & Flexible Design Standards with a Retina & Responsive Approach. Browse the amazing Features this template offers.'
+- 
+  img: profile-3.png
+  name: Dean
+  description: Administrator
+  quote: 'We believe in Simple, Creative & Flexible Design Standards with a Retina & Responsive Approach. Browse the amazing Features this template offers.'
+- 
+  img: profile-4.png
+  name: Sam
+  description: SEO
+  quote: 'We believe in Simple, Creative & Flexible Design Standards with a Retina & Responsive Approach. Browse the amazing Features this template offers.'
+
+----
+
+Color: #3d3d3d

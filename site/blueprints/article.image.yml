@@ -1,0 +1,47 @@
+title:           Article with Image
+
+pages:           false
+files:           true
+
+icon:            picture-o
+
+fields:
+  title:
+    label:       Title
+    type:        title
+    width:       1/3
+
+  author:
+    label:       Author
+    type:        user
+    width:       1/3
+
+  date:
+    icon:        calendar
+    label:       Date
+    type:        date
+    format:      LL
+    placeholder: Select a date…
+    default:     today
+    required:    true
+    width:       1/3
+
+  coverimage:
+    label:       coverimage
+    type:        image
+
+  categories:
+    label:       Category
+    type:        select
+    readonly:    true
+    default:     Image
+    options:
+      Image:     Image
+
+  tags:
+    label:       Tags
+    type:        tags
+
+  text:
+    label:       Text
+    type:        markdown

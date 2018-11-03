@@ -1,0 +1,36 @@
+title:          Team Module
+pages:          false
+files:          true
+icon:           users
+
+fields:
+  title:
+    label:      Module Title
+    type:       text
+
+  subtitle:
+    label:      Header
+    type:       Text
+
+  team:
+    label:      Team Member
+    type:       structure
+    modalsize:  small
+    style:      table
+    fields:
+      name:
+        label:  Name
+        type:   text
+      img:
+        label:  Image
+        type:   image
+      position:
+        label:  Position
+        type:   text
+      email:
+        label:  Email
+        type:   email
+      description:
+        label:  Description
+        type:   textarea
+        help:   optional

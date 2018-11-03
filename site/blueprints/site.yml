@@ -1,18 +1,162 @@
-title: Site
+title:                  Site
+
+pages:
+  template:
+    - blog
+    - projects
+    - contact
+    - about
+    - default
+    - home
 
 fields:
+  tab1:
+    label:              General
+    icon:               cog
+    type:               tabs
+
   title:
-    label: Title
-    type:  text
+    label:              Title
+    type:               text
+    width:              1/2
 
   author:
-    label: Author
-    type:  text
+    label:              Author
+    type:               text
+    width:              1/2
+
+  logo:
+    label:              Logo
+    type:               image
+    width:              1/2
+
+  favicon:
+    label:              Favicon
+    type:               image
+    width:              1/2
 
   description:
-    label: Description
-    type:  textarea
-    
+    label:              Description
+    type:               markdown
+
+  email:
+    label:              Email
+    type:               email
+    width:              1/3
+
+  phone:
+    label:              Telephone
+    type:               tel
+    width:              1/3
+
+  color_primary:
+    label:              Background Color
+    type:               color
+    width:              1/3
+
   copyright:
-    label: Copyright
-    type:  textarea
+    label:              Copyright
+    type:               textarea
+
+  tab2:
+    label:              Header
+    icon:               cog
+    type:               tabs
+
+  headline:
+    label:              Headline
+    type:               structure
+    modalsize:          large
+    style:              table
+    limit:              4
+    fields:
+      name:
+        label:          Title
+        type:           text
+        width:          1/2
+      icon:
+        label:          Icon
+        type:           select
+        default:        phone
+        width:          1/2
+        options:
+          phone:        Phone
+          envelope-o:   Email
+          fax:          Fax
+          clock-o:      Clock
+          map-marker:   Address
+          calendar-o:   Eventdate
+      category:
+        label:          Category
+        type:           fieldtoggle
+        options:
+          phone:        Phone Number
+          email:        Email
+          fax:          Fax
+          openinghours: Opening Hours
+          address:      Address
+          event:        Event
+        show:
+          phone:        phone
+          email:        email
+          fax:          fax
+          openinghours: openinghours
+          address:      address
+          event:        event
+        hide:
+          phone:        email fax openinghours address event
+          email:        phone fax openinghours address event
+          fax:          phone email openinghours address event
+          openinghours: phone email fax address event
+          address:      phone email fax openinghours event
+          event:        phone email fax openinghours address
+      phone:
+        label:          Phone Number
+        type:           tel
+      email:
+        label:          Email address
+        type:           email
+      fax:
+        label:          Fax Number
+        type:           tel
+      openinghours:
+        label:          Opening Hours
+        type:           text
+        icon:           clock-o
+      address:
+        label:          Address
+        type:           text
+        icon:           map-marker
+      event:
+        label:          Eventdate
+        type:           date
+        icon:           calendar-o
+
+  tab3:
+    label:              Socialmedia
+    icon:               cog
+    type:               tabs
+
+  socialbar:
+    label:              Socialmedia Accounts
+    type:               structure
+    modalsize:          medium
+    style:              table
+    fields:
+      company:
+        label:          Company
+        type:           text
+        help:           "e.g. facebook, twitter, pinterest"
+      url:
+        label:          URL
+        type:           url
+        help:           "link to your socialmedia account/page"
+
+  tab4:
+    label:              Footer
+    icon:               cog
+    type:               tabs
+
+  footer:
+    label:              Footer
+    type:               markdown

@@ -1,0 +1,23 @@
+title:           Carousel Module
+pages:           false
+files:           true
+icon:            sliders
+
+fields:
+  title:
+    label:       Module Title
+    type:        text
+
+  carousel:
+    label:       Carousel Slider
+    type:        structure
+    modalsize:   large
+    style:       table
+    limit:       4
+    fields:
+      img:
+        label:   Image
+        type:    image
+      text:
+        label:   Description
+        type:    markdown

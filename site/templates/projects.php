@@ -1,19 +1,12 @@
 <?php snippet('header') ?>
+<?php snippet('breadcrumb') ?>
 
-  <main class="main" role="main">
-
-    <header class="wrap">
-      <h1><?= $page->title()->html() ?></h1>
-      <div class="intro text">
-        <?= $page->text()->kirbytext() ?>
+  <div class="section showcase">
+    <div class="container">
+      <div class="columns is-multiline">
+        <?php snippet('projects/showcase') ?>
       </div>
-      <hr />
-    </header>
-      
-    <div class="wrap wide">    
-      <?php snippet('showcase') ?>
     </div>
-
-  </main>
+  </div>
 
 <?php snippet('footer') ?>

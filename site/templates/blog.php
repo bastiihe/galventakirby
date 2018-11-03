@@ -1,60 +1,54 @@
 <?php snippet('header') ?>
+<?php snippet('breadcrumb') ?>
 
-  <main class="main" role="main">
+<div class="section">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-9">
+          <?php if($articles->count()): ?>
+            <?php foreach($articles as $article): ?>
+              <div class="columns">
 
-    <header class="wrap">
-      <h1><?= $page->title()->html() ?></h1>
+              <?php if($article->template() == 'article.text'): // text posts ?>
 
-      <?php
-      // This page uses a separate controller to set variables, which can be used
-      // within this template file. This results in less logic in your templates,
-      // making them more readable. Learn more about controllers at:
-      // https://getkirby.com/docs/developer-guide/advanced/controllers
-      if($pagination->page() == 1):
-      ?>
-        <div class="intro text">
-          <?= $page->text()->kirbytext() ?>
-        </div>
-      <?php endif ?>
+              <?php snippet('blog/article.text', array('article' => $article)) ?>
 
-      <hr />
-    </header>
+              <?php elseif($article->template() == 'article.image'): // image posts ?>
 
-    <section class="wrap">
-      <?php if($articles->count()): ?>
-        <?php foreach($articles as $article): ?>
+              <?php snippet('blog/article.image', array('article' => $article)) ?>
 
-          <article class="article index">
+              <?php elseif($article->template() == 'article.video'): // video posts ?>
 
-            <header class="article-header">
-              <h2 class="article-title">
-                <a href="<?= $article->url() ?>"><?= $article->title()->html() ?></a>
-              </h2>
+              <?php snippet('blog/article.video', array('article' => $article)) ?>
 
-              <p class="article-date"><?= $article->date('F jS, Y') ?></p>
-            </header>
+              <?php elseif($article->template() == 'article.quote'): // quote posts ?>
 
-            <?php snippet('coverimage', $article) ?>
+              <?php snippet('blog/article.quote', array('article' => $article)) ?>
 
-            <div class="text">
-              <p>
-                <?= $article->text()->kirbytext()->excerpt(50, 'words') ?>
-                <a href="<?= $article->url() ?>" class="article-more">read more</a>
-              </p>
+              <?php elseif($article->template() == 'article.link'): // link posts ?>
+
+              <?php snippet('blog/article.link', array('article' => $article)) ?>
+
+              <?php endif ?>
+
+                </div>
+                <hr />
+              <?php endforeach ?>
+            <?php else: ?>
+              <p>This blog does not contain any articles yet.</p>
+          <?php endif ?>
+          <div class="columns">
+            <div class="column pagination-n">
+              <?php snippet('pagination') ?>
             </div>
+          </div>
+      </div>
+      <div class="column is-3">
+        <?php snippet('blog/sidebar', array('tags' => $tags)) ?>
+      </div>
 
-          </article>
-
-          <hr />
-
-        <?php endforeach ?>
-      <?php else: ?>
-        <p>This blog does not contain any articles yet.</p>
-      <?php endif ?>
-    </section>
-
-    <?php snippet('pagination') ?>
-
-  </main>
+    </div>
+  </div>
+</div>
 
 <?php snippet('footer') ?>

@@ -1,20 +1,32 @@
-title: Home
+title:           Home
 
-pages: false
+pages:
+  template:      home
+  build:
+    - title:     modules
+      uid:       modules
+      template:  modules
+
+pages:           false
+
+files:           false
+
+icon:            home
 
 fields:
   title:
-    label: Title
-    type:  text
+    label:       Title
+    type:        text
+    width:       1/2
 
-  intro:
-    label: Intro
-    type:  textarea
+  menu_title:
+    label:       Menu Title
+    type:        text
+    placeholder: changes the Menu Title
+    help:        Optional
+    icon:        bars
+    width:       1/2
 
-  text:
-    label: Text
-    type:  textarea
-
-  cover_image:
-    label: Cover images
-    type: image
+  modules:
+    label:       Modules
+    type:        modules

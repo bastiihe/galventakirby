@@ -1,41 +1,64 @@
-title: Blog
+title:           Blog
 
-files: false
+files:           false
 
 pages:
-  template: article
-  sort: flip
-  num: date
+  template:
+    - article.text
+    - article.image
+    - article.video
+    - article.quote
+    - article.link
+  sort:          flip
+  num:           date
 
-options: 
-  template: false
-  status: false
+options:
+  template:      false
+  status:        false
 
-icon: newspaper-o
+icon:            newspaper-o
 
 fields:
   title:
-    label: Title
-    type: title
-    required: true
-    width: 3/4
+    label:       Title
+    type:        title
+    width:       2/5
+
+  menu_title:
+    label:       Menu Title
+    type:        text
+    placeholder: changes the Menu Title
+    help:        Optional
+    icon:        bars
+    width:       2/5
 
   perpage:
-    label: Posts per page
-    type: number
-    min: 1
-    max: 20
-    default: 5
-    width: 1/4
+    label:       Posts per page
+    type:        number
+    min:         1
+    max:         20
+    default:     5
+    width:       1/5
 
-  text:
-    label: Text
-    type: textarea
+  sidebar_category:
+    label:       Category Label
+    type:        text
+    width:       1/3
+
+  sidebar_tags:
+    label:       Tags Label
+    type:        text
+    width:       1/3
+
+  sidebar_projects:
+    label:       Projects Label
+    type:        text
+    width:       1/3
 
   info:
-    label: Hint
-    type: info
-    text: >
+    label:       Hint
+    type:        info
+    text:        >
       The blog page fetches its subpages and displays them as blog posts.
       To fill the blog page with content, just hit the <b>Add</b> button
       to create a new article. Your blog articles will be automatically ordered by

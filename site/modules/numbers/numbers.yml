@@ -1,0 +1,23 @@
+title:          Numbers Module
+pages:          false
+files:          false
+icon:           pie-chart
+
+fields:
+  title:
+    label:      Module Title
+    type:       text
+
+  numbers:
+    label:      Numbers
+    type:       structure
+    modalsize:  small
+    style:      table
+    limit:      6
+    fields:
+      number:
+        label:  Number
+        type:   number
+      text:
+        label:  Text
+        type:   text

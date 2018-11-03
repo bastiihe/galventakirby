@@ -1,0 +1,18 @@
+title:       Modules
+
+icon:        puzzle-piece
+
+pages:
+  template:
+    - module.banner
+    - module.features
+    - module.imageblock
+    - module.numbers
+    - module.testimonials
+    - module.team
+    - module.text-full
+    - module.text-half
+    - module.carousel
+    - module.recentprojects
+
+files:       false

@@ -1,0 +1,41 @@
+Title: Imageblock
+
+----
+
+Text: 
+
+## **YOU'RE IN GOOD HANDS.**
+
+#### Five Points that define Our Reliability.
+
+* Donec blandit a lorem id convallis.
+* Cras gravida arcu at diam gravida gravida.
+* Integer in volutpat libero.
+* Donec a diam tellus.
+* Aenean nec tortor orci.
+
+----
+
+Coverimage: imageblock.jpg
+
+----
+
+Leftright: left
+
+----
+
+Left: imageblock.jpg
+
+----
+
+Right: 
+
+## **You're in good hands**
+
+#### Five Points that define Our Reliability.
+
+* Market Leader since 1915
+* Positive Results within Deadlines
+* 100% Reliability & Guarantee
+* Dedicated Professional Team of 500+
+* Unmatched After Project Completion Support

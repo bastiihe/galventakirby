@@ -1,10 +1,23 @@
-title: Page
+title:          Default
+
+pages:
+  template:     default
+  build:
+    - title:    modules
+      uid:      modules
+      template: modules-default
+
+files:          false
 
 fields:
   title:
-    label: Title
-    type:  text
+    label:      Title
+    type:       text
 
   text:
-    label: Text
-    type:  textarea
+    label:      Text
+    type:       textarea
+
+  modules:
+    label:      Modules
+    type:       modules

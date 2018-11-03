@@ -168,13 +168,13 @@ class File extends \File {
     new Uploader($this->page, $this);    
   }
 
-  public function delete($force = false) {
+  public function delete() {
 
     // create the delete event
     $event = $this->event('delete:action');
 
     // check for permissions
-    if(!$force) $event->check();
+    $event->check();
 
     // remove all thumbs
     $this->removeThumbs();

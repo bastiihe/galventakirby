@@ -1,0 +1,9 @@
+Title: Home
+
+----
+
+Menu-title: 
+
+----
+
+Modules: carousel, banner, features, numbers, testimonials, imageblock

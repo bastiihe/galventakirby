@@ -1,0 +1,46 @@
+Title: Team Module
+
+----
+
+Team: 
+
+- 
+  name: Dennis
+  img: dennis.png
+  position: Webdeveloper
+  description: >
+    Lorem ipsum dolor sit amet, consetetur
+    sadipscing elitr, sed diam nonumy eirmod
+    tempor invidunt ut l
+  email: dennis@way.com
+- 
+  name: Markus
+  img: markus.png
+  position: CEO
+  description: >
+    Lorem ipsum dolor sit amet, consetetur
+    sadipscing elitr, sed diam nonumy eirmod
+    tempor invidunt ut l
+  email: markus@way.com
+- 
+  name: Dean
+  img: dean.png
+  position: Muellmann
+  description: >
+    Lorem ipsum dolor sit amet, consetetur
+    sadipscing elitr, sed diam nonumy eirmod
+    tempor invidunt ut l
+  email: dean@way.com
+- 
+  name: Sam
+  img: sam.png
+  position: SEO
+  description: >
+    Lorem ipsum dolor sit amet, consetetur
+    sadipscing elitr, sed diam nonumy eirmod
+    tempor invidunt ut l
+  email: sam@way.com
+
+----
+
+Subtitle: Our Dedicated Team

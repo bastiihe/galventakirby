@@ -1,0 +1,17 @@
+title:      Text Two Columns
+pages:      false
+files:      true
+icon:       font
+
+fields:
+  title:
+    label:  Module Title
+    type:   text
+
+  text:
+    label:  First Text
+    type:   markdown
+
+  text2:
+    label:  Second Text
+    type:   markdown

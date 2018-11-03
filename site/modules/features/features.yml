@@ -1,0 +1,47 @@
+title:             Features Module
+pages:             false
+files:             true
+icon:              star
+
+fields:
+  title:
+    label:         Module Title
+    type:          text
+
+  features:
+    label:         Features
+    type:          structure
+    modalsize:     large
+    style:         table
+    limit:         4
+    fields:
+      top:
+        label:     'Image/Icon'
+        type:      fieldtoggle
+        options:
+          img:     Image
+          faicon:  Icon
+        show:
+          img:     img
+          faicon:  faicon
+        hide:
+          img:     faicon
+          faicon:  img
+      img:
+        label:     Image
+        type:      image
+      faicon:
+        label:     Icon
+        type:      text
+        help:      'use a fontawesome icon like: envelope-open-o'
+      title:
+        label:     Title
+        type:      text
+        width:     1/2
+      subtitle:
+        label:     Subtitle
+        type:      text
+        width:     1/2
+      text:
+        label:     Description
+        type:      textarea

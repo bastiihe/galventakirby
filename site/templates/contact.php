@@ -1,41 +1,76 @@
 <?php snippet('header') ?>
 
-  <main class="main" role="main">
-    
-    <header class="wrap">
-      <h1><?= $page->title()->html() ?></h1>      
-      <div class="intro text">
-        <?= $page->intro()->kirbytext() ?>
-      </div>    
-      <hr />      
-    </header>
-    
-    <div class="wrap wide">
-      <h2>Get in Touch</h2>
-      
-      <ul class="contact-options">
-        <?php foreach($page->contactoptions()->toStructure() as $item): ?>
-          <?php $icon = $page->image($item->icon()); ?>
-          <li class="contact-item column">
-            <div class="contact-item-content">
-              <img src="<?= $icon->url() ?>" width="<?= $icon->width() ?>" alt="<?= $item->title()->html() ?> icon" class="contact-item-icon" />
-              <h3 class="contact-item-title"><?= $item->title()->html() ?></h3>
-              <p class="contact-item-text">
-                <?= $item->text()->html() ?>
-              </p>
+<?php snippet('contact/map') ?>
+
+<div class="section">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-7 is-offset-1 content">
+          <h3>Send us an Email</h3>
+          <form id="contact-form" action="https://formspree.io/<?= $page->email_sender() ?>" method="POST">
+          <div class="columns">
+            <div class="column">
+              <div class="field">
+                <label class="label">Name</label>
+                <div class="control has-icons-left has-icons-right">
+                  <input class="input" type="name" id="name" placeholder="Name" required/>
+                  <span class="icon is-small is-left">
+                    <i class="fa fa-user-o"></i>
+                  </span>
+                </div>
+              </div>
             </div>
-            <p class="contact-item-action">
-              <a href="<?= $item->url()->html() ?>" class="contact-action btn"><?= $item->linktext()->html() ?></a>
+            <div class="column">
+              <div class="field">
+                <label class="label">Email</label>
+                <div class="control has-icons-left has-icons-right">
+                  <input class="input" type="email" id="email" placeholder="Email" required/>
+                  <span class="icon is-small is-left">
+                    <i class="fa fa-envelope"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="columns">
+            <div class="column">
+              <input class="is-hidden" type="text" name="_gotcha">
+              <input class="is-hidden" type="hidden" name="Subject" value="<?= $page->email_subject() ?>">
+              <div class="field">
+                <label class="label">Text</label>
+                <div class="control">
+                  <textarea class="textarea" id="message" name="message" rows="8" placeholder="Explain how we can help you" required/></textarea>
+                </div>
+              </div>
+              <div class="field">
+                <div class="control">
+                  <button class="button is-primary" id="contact-form-submit">
+                    Send message
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="column is-2 content has-text-centered-mobile">
+        <?php $branches = $page->branches()->toStructure() ?>
+        <?php foreach($branches as $b): ?>
+          <div class="branches">
+            <h3><?= $b->location() ?></h3>
+            <?= $b->address()->kt() ?>
+            <p>
+              <strong>Email:</strong> <?= $b->email() ?>
+              <br />
+              <strong>Phone:</strong> <?= $b->phone() ?>
+              <br />
+              <strong>Fax:</strong> <?= $b->fax() ?>
             </p>
-          </li>
+          </div>
         <?php endforeach ?>
-      </ul>
+      </div>
     </div>
-      
-    <div class="contact-twitter text wrap cf">
-      <?= $page->text()->kirbytext() ?>
-    </div>
-    
-  </main>
+  </div>
+</div>
 
 <?php snippet('footer') ?>

@@ -82,3 +82,8 @@ or send us an email: <support@getkirby.com>
 
 © 2009-2016 Bastian Allgeier (Bastian Allgeier GmbH)
 <http://getkirby.com>
+
+## VERSION 1.1
+
+- fixed fontawesome icons
+- fixed the embeded video function

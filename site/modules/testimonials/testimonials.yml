@@ -1,0 +1,38 @@
+title:              Testimonials Module
+pages:              false
+files:              true
+icon:               address-card
+
+fields:
+  title:
+    label:          Module title
+    type:           text
+    width:          1/2
+
+  color:
+    label:          Background Color
+    type:           color
+    width:          1/2
+    help:           'if empty primary theme color will be used as the background color'
+
+  testimonials:
+    label:          Testimonials
+    type:           structure
+    modalsize:      large
+    style:          table
+    fields:
+      img:
+        label:      Image
+        type:       image
+      name:
+        label:      Name
+        type:       text
+        width:      1/2
+      description:
+        label:      Description
+        type:       text
+        help:       "e.g. Job position"
+        width:      1/2
+      quote:
+        label:      Quote
+        type:       textarea

@@ -1,0 +1,27 @@
+title:      Imageblock Module
+pages:      false
+files:      true
+icon:       columns
+
+fields:
+  title:
+    label:  Module Title
+    type:   text
+
+  leftright:
+    label:     'Imageblock'
+    type:      fieldtoggle
+    options:
+      left:    Image left
+      right:  Image right
+    show:
+      left:   left right
+      right:  left right
+      
+  left:
+    label:  Coverimage
+    type:   image
+
+  right:
+    label:  Text
+    type:   markdown

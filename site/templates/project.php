@@ -1,33 +1,32 @@
 <?php snippet('header') ?>
+<?php snippet('breadcrumb') ?>
 
-  <main class="main" role="main">
-    
-    <header class="wrap">
-      <h1><?= $page->title()->html() ?></h1>
-      <div class="intro text">
-        <?= $page->year() ?>
+<div class="section">
+  <div class="container">
+    <div class="columns">
+      <div class="column">
+        <div class="content">
+          <?= $page->text()->kirbytext() ?>
+        </div>
       </div>
-      <hr />
-    </header>
-    
-    <div class="text wrap">
-      
-      <?= $page->text()->kirbytext() ?>
-
-      <?php
-      // Images for the "project" template are sortable. You
-      // can change the display by clicking the 'edit' button
-      // above the files list in the sidebar.
-      foreach($page->images()->sortBy('sort', 'asc') as $image): ?>
-        <figure>
-          <img src="<?= $image->url() ?>" alt="<?= $page->title()->html() ?>" />
-        </figure>
-      <?php endforeach ?>
-      
     </div>
-    
-    <?php snippet('prevnext') ?>
-
-  </main>
+    <?php $count = $page->images()->count() ?>
+    <div class="columns lightbox <?php if($count >= 3): ?>is-multiline<?php elseif($count == 1): ?>has-text-centered<?php endif ?>">
+        <?php foreach($page->images()->sortBy('sort', 'asc') as $image): ?>
+          <div class="column <?php if($count >= 3): ?>is-4<?php endif ?>">
+            <a href="<?= $image->url() ?>">
+              <?= thumb($image, array('width' => 750, 'height' => 469, 'crop' => true)) ?>
+            </a>
+          </div>
+        <?php endforeach ?>
+      </div>
+      <div class="columns">
+        <div class="column">
+          <?php snippet('prevnext') ?>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <?php snippet('footer') ?>

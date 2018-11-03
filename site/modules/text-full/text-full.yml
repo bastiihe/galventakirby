@@ -1,0 +1,13 @@
+title:      Text One Column
+pages:      false
+files:      true
+icon:       font
+
+fields:
+  title:
+    label:  Module Title
+    type:   text
+
+  text:
+    label:  Text
+    type:   markdown
