@@ -8,7 +8,7 @@ Carousel:
   img: slide-1.jpg
   title: ""
   text: |
-    ## Welcome to Way
+    ## GALVENTA
     
     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
     

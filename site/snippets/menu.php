@@ -18,6 +18,7 @@
           </div>
 
           <div id="navMenu" class="navbar-menu">
+            <a class="logo--custom" href="<?= $site->url() ?>"><img src="<?= $image->url() ?>" width="210px" /></a>
 
             <div class="<?php if(!detect()->isMobile() || (detect()->isMobile() && detect()->isTablet())): ?>nav-center<?php endif ?><?php if (detect()->isMobile()): ?>navbar-start<?php endif ?>">
 

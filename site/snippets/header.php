@@ -16,6 +16,7 @@
   <?php endif ?>
 
   <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon-60x60.png" sizes="60x60">
+<link href="https://fonts.googleapis.com/css?family=Cabin:400,600,700|Open+Sans" rel="stylesheet">
 
   <?= css('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css') ?>
   <?= css('assets/css/bulma.css') ?>

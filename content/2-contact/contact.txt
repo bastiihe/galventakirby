@@ -1,0 +1,56 @@
+Title: Contact
+
+----
+
+Menu-title:
+
+----
+
+Subtitle: Get in Touch!
+
+----
+
+Apikey: AIzaSyB_0RyJRAV3gstgL5YdA16JreC3E4lZdd0
+
+----
+
+Zoom: 14
+
+----
+
+Lat: -33.865143
+
+----
+
+Lng: 151.209900
+
+----
+
+Email-sender: info@way.com
+
+----
+
+Email-subject: New Message!
+
+----
+
+Branches:
+
+-
+  location: Australia
+  address: |
+    **Headquarter:**
+
+    95 Liverpool St,
+    Sydney NSW 2000
+  email: sydney@way.com
+  phone: (61) 12 34567891
+  fax: (61) 12 34567892
+-
+  location: Germany
+  address: |
+    Schützenstraße 11,
+    10117 Berlin, Deutschland
+  email: berlin@way.com
+  phone: (49) 1234 567891
+  fax: (49) 1234 567892
