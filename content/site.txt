@@ -1,8 +1,8 @@
-Title: WAY
+Title: Galventa GmbH
 
 ----
 
-Author: Admin
+Author: 
 
 ----
 
@@ -10,7 +10,7 @@ Description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam n
 
 ----
 
-Copyright: © (date: Year) (link: http://themes.kueker.net/way text: Way)
+Copyright: © (date: Year)
 
 ----
 
@@ -53,11 +53,11 @@ Logo: logo.png
 
 ----
 
-Email: way@template.com
+Email: 
 
 ----
 
-Phone: (49)1234 56789012
+Phone: 
 
 ----
 
@@ -89,7 +89,7 @@ Color: #f00e0e
 
 ----
 
-Color-primary: #3273dc
+Color-primary: #df702b
 
 ----
 

@@ -14,8 +14,8 @@ Features:
     nobis voluptatum est voluptatem
     accusamus molestiae eaque perspiciatis
     mollitia.
-  top: img
-  faicon: ""
+  top: faicon
+  faicon: bed
 - 
   img: feature-2.png
   title: Effective Planning

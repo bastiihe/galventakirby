@@ -1,0 +1,18 @@
+Title: Sascha fritsche
+
+----
+
+Leftright: left
+
+----
+
+Left: 0.jpg
+
+----
+
+Right: 
+
+**Das ist mein Text.**
+
+* geile siech
+* viel ahnig

@@ -6,4 +6,4 @@ Menu-title:
 
 ----
 
-Modules: carousel, banner, features, numbers, testimonials, imageblock
+Modules: carousel, banner, features, numbers, testimonials, imageblock, imageblock-1i2chhm

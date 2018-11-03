@@ -23,11 +23,10 @@
   <?= css('assets/css/carousel.css') ?>
   <?= css('assets/css/simpleLightbox.min.css') ?>
   <?= css('assets/css/index.css') ?>
+  <?= css('assets/css/custom.css') ?>
 
   <?php snippet('colors') ?>
 
 </head>
 <body>
-  <?php snippet('socialbar') ?>
-  <?php snippet('headline') ?>
   <?php snippet('menu') ?>
