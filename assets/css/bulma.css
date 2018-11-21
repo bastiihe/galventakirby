@@ -6213,17 +6213,6 @@ a.nav-item:not(.button).is-tab.is-active {
   color: #0a0a0a;
 }
 
-.navbar.is-white .navbar-brand > .navbar-item,
-.navbar.is-white .navbar-brand .navbar-link {
-  color: #0a0a0a;
-}
-
-.navbar.is-white .navbar-brand > a.navbar-item:hover, .navbar.is-white .navbar-brand > a.navbar-item.is-active,
-.navbar.is-white .navbar-brand .navbar-link:hover,
-.navbar.is-white .navbar-brand .navbar-link.is-active {
-  background-color: #f2f2f2;
-  color: #0a0a0a;
-}
 
 .navbar.is-white .navbar-brand .navbar-link::after {
   border-color: #0a0a0a;
@@ -6796,13 +6785,6 @@ a.nav-item:not(.button).is-tab.is-active {
   position: relative;
 }
 
-a.navbar-item:hover, a.navbar-item.is-active,
-.navbar-link:hover,
-.navbar-link.is-active {
-  background-color: whitesmoke;
-  color: #0a0a0a;
-}
-
 .navbar-item {
   -webkit-box-flex: 0;
       -ms-flex-positive: 0;
@@ -6811,9 +6793,6 @@ a.navbar-item:hover, a.navbar-item.is-active,
       flex-shrink: 0;
 }
 
-.navbar-item img {
-  max-height: 1.75rem;
-}
 
 .navbar-item.has-dropdown {
   padding: 0;

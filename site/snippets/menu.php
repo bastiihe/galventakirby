@@ -3,7 +3,7 @@
           <div class="navbar-brand is-hidden-desktop">
             <a class="navbar-item" href="<?= $site->url() ?>">
               <?php if($image = $site->logo()->toFile()): ?>
-              <img src="<?= $image->url() ?>" width="112" height="28" />
+              <img src="<?= $image->url() ?>" width="190" />
               <?php else: ?>
                 <h1 class="title">
                   <?= $site->title()->html() ?>
